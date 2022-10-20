@@ -69,10 +69,10 @@ body {font-family: serif;}
 		
 		
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Bio')" id="defaultOpen">Bio</button>
-  <button class="tablinks" onclick="openCity(event, 'Skillsets')">Skillsets</button>
-  <button class="tablinks" onclick="openCity(event, 'Work Experience')">Work Experience</button>
-  <button class="tablinks" onclick="openCity(event, 'Projects and Papers')">Projects and Papers</button>
+  <button class="tablinks" onclick="openTab(event, 'Bio')" id="defaultOpen">Bio</button>
+  <button class="tablinks" onclick="openTab(event, 'Skillsets')">Skillsets</button>
+  <button class="tablinks" onclick="openTab(event, 'Work Experience')">Work Experience</button>
+  <button class="tablinks" onclick="openTab(event, 'Projects and Papers')">Projects and Papers</button>
 </div>
 </center>
 
@@ -123,9 +123,9 @@ body {font-family: serif;}
 		<I> For conciseness and relevance purposes, I will not list the retail/food jobs I have served over the past half decade.</I>
 		<br><hr>
 	<p> <b> Verizon Sales Expert </b> <br>
-		<I> Sept. 2022 - present </b> <br>
-		<li>Worked with a team to meet sales goals every period </li>
-		<li>Interacted with dozens of customers daily to discuss their questions and issues regarding their product or carrier plan </li>
+		<I> Sept. 2022 - present </I> <br>
+		<li>Worked with a team to meet sales goals every period. </li>
+		<li>Provided services to customers such as data transfers, changes to phone plans, and sim swaps. </li>
 		<br> <br>
 	<p> <b> Glissando Lake Tutoring </b> <br> 
 		<I> Sept. 2021 - present </I> <br>
@@ -137,6 +137,9 @@ body {font-family: serif;}
 <div id = "Projects and Papers" class = "tabcontent">
 <h3> Less telling, more showing. Here are the things I have accomplished in my free time with coding!</h3> 
 	<p> <I> coming soon </I> </p>
+	
+	
+
 <!--
 <p>click on the tiny triangle to expand on the details. These projects also pertain to things that interest me, so now you know a little about my hobbies! </p>
 	<hr>
@@ -170,7 +173,7 @@ body {font-family: serif;}
 
 		
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
